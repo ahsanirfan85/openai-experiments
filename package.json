@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "openai": "^3.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "openai-experiments",
+  "version": "1.0.0",
+  "description": "Experimenting with OpenAI's GPT-3 NLP API.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahsanirfan85/openai-experiments.git"
+  },
+  "keywords": [
+    "openai",
+    "gpt3",
+    "gpt-3",
+    "nlp",
+    "ai",
+    "artificial",
+    "intelligence",
+    "natural",
+    "language",
+    "processing"
+  ],
+  "author": "Ahsan Irfan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahsanirfan85/openai-experiments/issues"
+  },
+  "homepage": "https://github.com/ahsanirfan85/openai-experiments#readme"
+}
