@@ -32,16 +32,16 @@ const openai = new OpenAIApi(configuration);
 //         console.log(response.data.data)
 //     });
 
-openai
-    .createCompletion({
-        model: 'curie:ft-personal-2022-06-21-01-38-31',
-        prompt: 'Generate a random tweet for the "The War Within" brand.',
-        max_tokens: 50,
-        temperature: 1
-    })
-    .then((response) => {
-        console.log(response.data.choices[0].text);
-    });
+// openai
+//     .createCompletion({
+//         model: 'curie:ft-personal-2022-06-21-01-38-31',
+//         prompt: 'Generate a random tweet for the "The War Within" brand.',
+//         max_tokens: 50,
+//         temperature: 1
+//     })
+//     .then((response) => {
+//         console.log(response.data.choices[0].text);
+//     });
 
 // openai
 //     .createCompletion({
@@ -56,13 +56,13 @@ openai
 
 // Upload training data
 
-// openai
-//     .createFile(
-//     fs.createReadStream("data.jsonl"), "fine-tune"
-// )
-//     .then((response) => {
-//         console.log(response);
-//     });
+openai
+    .createFile(
+    fs.createReadStream("data.jsonl"), "fine-tune"
+)
+    .then((response) => {
+        console.log(response);
+    });
 
 
 // Requiring the read-excel-file/node package
